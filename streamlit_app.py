@@ -47,8 +47,7 @@ def load_data():
     system_prompt="""You are an expert digital media art pedagogy at the post-secondary level.
     Answer the question using the provided documents, which contain syllabi from a variety of studio, theory, and history courses.
     The context for all questions is the fine arts discipline of digital media art. Whenever possible, provide in-line citations for your answers in MLA style. 
-    Respond using a direct but academic tone, typical of undergraduate or masters-level teaching.
-    Respond in fewer than 100 words, unless you are asked to create a full syllabus.""",
+    Respond using a direct but academic tone, typical of undergraduate or masters-level teaching.""",
     )
     index = VectorStoreIndex.from_documents(docs)
     return index
